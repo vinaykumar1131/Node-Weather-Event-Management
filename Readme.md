@@ -57,3 +57,55 @@ Usage
 
 After setting up, you can start using the API to create events and fetch weather details based on location.
 
+API Endpoints
+User Authentication
+Signup
+Endpoint: POST host:port/users/signup
+Request Body:
+{
+    "userName": "your-email@example.com",
+    "password": "your-secure-password"
+}
+Description: Registers a new user.
+Login
+Endpoint: POST host:port/users/login
+Request Body:
+{
+    "userName": "your-email@example.com",
+    "password": "your-secure-password"
+}
+Description: Authenticates an existing user.
+Event Management
+Create Event
+Endpoint: POST host:port/events
+Request Body:
+{
+    "title": "Event Name",
+    "description": "Event Description",
+    "location": "Haryana",
+    "date": "YYYY-MM-DD",
+    "time": "HH:MM"
+}
+Description: Creates a new event.
+Get All Events
+Endpoint: GET host:port/events
+Description: Retrieves details of all events.
+Get Event by ID
+Endpoint: GET host:port/events/{id}
+Description: Retrieves details of a specific event.
+Update Event
+Endpoint: PUT host:port/events/{id}
+Request Body:
+{
+    "title": "Updated Event Name",
+    "description": "Updated Event Description",
+    "location": "Updated Location",
+    "date": "YYYY-MM-DD",
+    "time": "HH:MM"
+}
+Description: Updates event details.
+Delete Event
+Endpoint: DELETE host:port/events/{id}
+Description: Deletes an event.
+
+
