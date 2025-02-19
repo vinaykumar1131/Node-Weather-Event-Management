@@ -68,8 +68,11 @@ Request Body:
 }
 Description: Registers a new user.
 Login
+
 Endpoint: POST host:port/users/login
+
 Request Body:
+
 {
     "userName": "your-email@example.com",
     "password": "your-secure-password"
@@ -80,7 +83,9 @@ Description: Authenticates an existing user.
 
 Event Management
 Create Event
+
 Endpoint: POST host:port/events
+
 Request Body:
 {
     "title": "Event Name",
@@ -104,6 +109,7 @@ Description: Retrieves details of a specific event.
 
 Update Event
 Endpoint: PUT host:port/events/{id}
+
 Request Body:
 {
     "title": "Updated Event Name",
