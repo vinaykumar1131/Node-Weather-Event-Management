@@ -75,6 +75,9 @@ Request Body:
     "password": "your-secure-password"
 }
 Description: Authenticates an existing user.
+
+
+
 Event Management
 Create Event
 Endpoint: POST host:port/events
@@ -87,12 +90,18 @@ Request Body:
     "time": "HH:MM"
 }
 Description: Creates a new event.
+
+
 Get All Events
 Endpoint: GET host:port/events
 Description: Retrieves details of all events.
+
+
 Get Event by ID
 Endpoint: GET host:port/events/{id}
 Description: Retrieves details of a specific event.
+
+
 Update Event
 Endpoint: PUT host:port/events/{id}
 Request Body:
@@ -105,6 +114,8 @@ Request Body:
 }
 Description: Updates event details.
 Delete Event
+
+
 Endpoint: DELETE host:port/events/{id}
 Description: Deletes an event.
 
